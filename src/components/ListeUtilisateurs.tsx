@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react'
 
-// Type minimal pour les utilisateurs de l'API
+
 interface User {
   id: number
   name: string
   email: string
 }
 
-// Exercice 3 : useEffect pour récupérer des données depuis une API
-// Le tableau vide [] signifie que l'effet ne s'exécute qu'une seule fois
-// (au chargement du composant)
 
 export default function ListeUtilisateurs() {
   const [users, setUsers] = useState<User[]>([])
@@ -22,11 +19,11 @@ export default function ListeUtilisateurs() {
         setUsers(data)
         setLoading(false)
       })
-  }, []) // [] = exécution unique au montage
+  }, [])
 
   return (
     <div className="card">
-      <h2>Exercice 3 — useEffect + API</h2>
+      <h2>Question 3 — useEffect + API</h2>
 
       {loading && <p>Chargement en cours...</p>}
 

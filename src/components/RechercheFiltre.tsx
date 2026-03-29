@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// Liste de noms de départ
+
 const noms = [
   'Aminata Diallo',
   'Moussa Traoré',
@@ -14,9 +14,6 @@ const noms = [
   'Alioune Faye',
 ]
 
-// Exercice 4 : filtre dynamique pendant la saisie
-// À chaque changement de l'input, on filtre la liste
-// et React affiche uniquement les noms qui correspondent
 
 export default function RechercheFiltre() {
   const [recherche, setRecherche] = useState('')
@@ -27,7 +24,7 @@ export default function RechercheFiltre() {
 
   return (
     <div className="card">
-      <h2>Exercice 4 — Recherche dynamique</h2>
+      <h2>Question 4 — Recherche dynamique</h2>
 
       <input
         type="text"
